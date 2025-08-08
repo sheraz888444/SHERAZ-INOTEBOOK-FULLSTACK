@@ -32,7 +32,7 @@ setNote({...note,[e.target.name]:e.target.value})
                   <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                 </div>
       
-                <button type="submit" className="btn btn-primary" onClick={handleclick}>Submit</button>
+                <button type="submit" className="btn btn-primary" onClick={handleclick}>Add note</button>
               </form>
       </div>
     </div>
