@@ -1,0 +1,4 @@
+[submodule "inotebook"]
+    path = inotebook
+    url = https://github.com/sheraz888444/inotebook.git
+    branch = main
