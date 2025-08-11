@@ -8,6 +8,7 @@ function Addnote() {
 const handleclick=(e)=>{
     e.preventDefault()
 addNote(note.title,note.description,note.tag);
+
 }
 const onchange=(e)=>{
 setNote({...note,[e.target.name]:e.target.value})

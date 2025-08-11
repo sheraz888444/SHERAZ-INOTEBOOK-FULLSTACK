@@ -15,6 +15,7 @@ function Noteitem(props) {
     editNote(note._id, editedTitle, editedDescription, note.tag || "");
     setShowModal(false);
   };
+  
 
   return (
     <>

@@ -7,9 +7,9 @@ const Notes = () => {
   const context = useContext(NotesContext);
   const { notes, fetchNote } = context;
 
-  useEffect(() => {
-    fetchNote(); 
-  }, []); 
+   useEffect(() => {
+     fetchNote(); 
+   }, []); 
 
   return (
     <>
