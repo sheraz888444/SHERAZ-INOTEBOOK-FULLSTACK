@@ -5,7 +5,8 @@ const Navbar = () => {
   const location = useLocation();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      {/* Added sticky-top here */}
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">Inotebook</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +21,10 @@ const Navbar = () => {
                 <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${location.pathname === "/signup" ? "active" : ""}`} to="/signup">Signup </Link>
+                <Link className={`nav-link ${location.pathname === "/signup" ? "active" : ""}`} to="/signup">Signup</Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/ ">Login </Link>
+                <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">Login</Link>
               </li>
             </ul>
           </div>
